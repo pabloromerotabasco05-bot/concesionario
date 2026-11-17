@@ -1,6 +1,13 @@
 // backend/prisma/seed.js
+import "dotenv/config";
 import { PrismaClient } from "@prisma/client";
-const prisma = new PrismaClient();
+import { PrismaBetterSqlite3 } from "@prisma/adapter-better-sqlite3";
+
+const adapter = new PrismaBetterSqlite3({
+  url: process.env.DATABASE_URL || "file:./dev.db",
+});
+
+const prisma = new PrismaClient({ adapter });
 async function main() {
 const coche = await prisma.coche.upsert({
 where: { id: 1 },
