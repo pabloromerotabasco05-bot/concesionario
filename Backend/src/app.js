@@ -4,7 +4,7 @@ import { logger } from "./middleware/logger.js";
 import cors from "cors"
 
 const app = express();
-const PORT = 3000;
+
 
 
 const origenes = process.env.FRONTEND_URL
