@@ -4,8 +4,10 @@
   "type": "module",
   "scripts": {
     "start": "node src/app.js",
-    "start:prod": "prisma migrate deploy && node src/app.js"
+    "start:prod": "npx prisma migrate deploy && node prisma/seed.js && node src/app.js"
   },
+
+  
   "dependencies": {
     "@prisma/adapter-better-sqlite3": "^7.10.0",
     "@prisma/client": "^7.10.0",
@@ -13,7 +15,7 @@
     "cors": "^2.8.6",
     "dotenv": "^16.0.0",
     "express": "^5.0.0",
-    "prisma": "^8.0.0-rc.33"
+    "prisma": "^7.10.0"
   },
   "devDependencies": {
     "@types/better-sqlite3": "^7.0.0",

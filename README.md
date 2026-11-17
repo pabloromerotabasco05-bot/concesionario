@@ -24,3 +24,6 @@ Ver backend/.env.example y frontend/.env.example (sin valores secretos).
 - API:      https://...onrender.com
 - Nota: la base de datos SQLite del plan gratuito es efímera.
 
+dawdajdiajwdd
+
+
