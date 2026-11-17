@@ -1,5 +1,5 @@
 // backend/prisma/seed.js
-import { PrismaClient } from &quot;@prisma/client&quot;;
+import { PrismaClient } from "@prisma/client";
 const prisma = new PrismaClient();
 async function main() {
 const coche = await prisma.coche.upsert({
