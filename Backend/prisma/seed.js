@@ -9,4 +9,4 @@ create: { id: 1, marca: "Audi", modelo: "A4", color:"negro", anio:"2020",matricu
 });
 
 }
-main().finally(() =&gt; prisma.$disconnect());
+main().finally(() => prisma.$disconnect());
